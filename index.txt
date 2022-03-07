@@ -6,3 +6,23 @@ messe in vendita da un concessionario.
 All'interno della cartella potete scrivere tutto in un semplice file di testo (.txt) 
 o se preferite lavorare con excel potete farlo ma magari allegate un'immagine del vostro 
 foglio cosicchè sia dipiù facile consultazione dai ragazzi oggi pomeriggio!
+
+Auto
+
+id - BigInt - not_null - auto_increment - unique
+anno
+km
+alimentazione
+trasmissione
+potenza 
+num_propietari
+costo_acquisto
+costo_vendita
+sconto
+rata_mensile
+targa
+modello
+marca
+imperfezioni
+
+
