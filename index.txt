@@ -9,20 +9,20 @@ foglio cosicchè sia dipiù facile consultazione dai ragazzi oggi pomeriggio!
 
 Auto
 
-id - BigInt - not_null - auto_increment - unique
-anno
-km
-alimentazione
-trasmissione
-potenza 
-num_propietari
-costo_acquisto
-costo_vendita
-sconto
-rata_mensile
-targa
-modello
-marca
-imperfezioni
+id - bigint - not_null - auto_increment - unique    (id univoco per ogni auto che si incrementa tutte le volte che inserisco un  record)
+anno(4) - date - not_null                           (anno della prima immatricolazione)
+km(7) - int - not_null - default(0);                (i chilometri del veicolo)
+alimentazione(50) - varchar - not_null              (il tipo di alimentazione ibrida/benzina/disel/gpl)
+trasmissione(25) - varchar - not_null               (tipo di trasmissione manuale/automatica)
+potenza(25) - varchar - not_null                    (la potenza in cavalli)
+num_propietari(3) - tinyint - not_null              (il numero totale dei proprietari del veicolo)
+costo_acquisto(8) - mediumint - null                (il prezzo di acquisto dell'auto dal concessionario)
+costo_vendita(8) - mediumint - null                 (se è stato deciso il prezzo per il cliente finale)
+sconto(3) - tinyint - null                          (eventuale sconto)
+rata_mensile(5) - smallint - null                   (eventuale rata mensile)
+targa(25) - varchar - not_null                      (la targa)
+modello(50) - varchar - not_null                    (il modello)
+marca(25) - varchar - not_null                      (la marca dell'auto)
+imperfezioni - varchar - null                       (Immagini con i vari difetti dell'auto)
 
 
